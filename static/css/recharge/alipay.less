@@ -1,0 +1,48 @@
+.k-main {
+	min-height: 100vh;
+	position: relative;
+	
+	.k-hand {
+		top: 24rpx;
+		right: 20rpx;
+		position: absolute;
+		animation: down 1s ease-in-out infinite;
+		.k-icon {height: 88rpx;}
+	}
+	
+	.k-guidance {
+		margin: 30rpx;
+		overflow: hidden;
+		border-radius: 8rpx;
+		box-shadow: 0 0 16rpx #CCC;
+		.k-icon {width: 100%;}
+	}
+	
+	.k-order {
+		gap: 16rpx;
+		display: flex;
+		margin-top: 4vh;
+		align-items: center;
+		flex-direction: column;
+		.k-icon {height: 124rpx;}
+	}
+	
+	.k-check {
+		border-top: 2rpx solid rgba(255, 54, 54, 0.1);
+		margin: 0 80rpx;
+		padding-top: 2vh;
+		margin-top: 2vh;
+		
+		.k-btn {
+			gap: 16rpx;
+			display: flex;
+			margin-top: 30rpx;
+			flex-direction: column;
+		}
+	}
+}
+
+@keyframes down {
+	0%, 100% {transform: translateY(0);}
+	50% {transform: translateY(-15rpx);}
+}

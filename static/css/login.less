@@ -1,0 +1,116 @@
+.k-main {
+	min-height: 100vh;
+	background-image: url(/static/img/bg.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	
+	.k-top {
+		gap: 20rpx;
+		display: flex;
+		margin-top: 8vh;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		
+		.k-logo {
+			display: flex;
+			width: 180rpx;
+			height: 180rpx;
+			border-radius: 8rpx;
+			align-items: center;
+			background-color: #FFF;
+			justify-content: center;
+		}
+	}
+	
+	.k-card {
+		margin: 0 40rpx;
+		margin-top: 5vh;
+		
+		.k-item {
+			display: flex;
+			height: 120rpx;
+			position: relative;
+			justify-content: center;
+			
+			.k-li {
+				flex: 1;
+				z-index: 1;
+				color: #000;
+				height: 88rpx;
+				display: flex;
+				font-weight: bold;
+				position: relative;
+				align-items: center;
+				justify-content: center;
+				
+				&.k-active {
+					color: #D81E05;
+					
+					&::after {
+						left: 50%;
+						content: "";
+						width: 50rpx;
+						height: 4rpx;
+						bottom: 8rpx;
+						position: absolute;
+						margin-left: -25rpx;
+						background-color: #D81E05;
+						border-radius: 4rpx;
+					}
+				}
+			}
+			
+			.k-a {
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				position: absolute;
+				background: url(/static/img/w.png);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+			}
+			
+			.k-w {
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				position: absolute;
+				background: url(/static/img/a.png);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+			}
+		}
+	}
+	
+	.k-witer {
+		margin: 0 40rpx;
+		
+		.k-bc {
+			height: 510rpx;
+			padding: 0 24rpx;
+			background-color: #FFF;
+			border-bottom-left-radius: 8rpx;
+			border-bottom-right-radius: 8rpx;
+			
+			.k-wechat {
+				gap: 40rpx;
+				display: flex;
+				height: 396rpx;
+				align-items: center;
+				flex-direction: column;
+				justify-content: center;
+				/deep/ .u-text {flex: none;}
+			}
+		}
+	}
+	
+	.k-agreement {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 30rpx 0;
+	}
+}

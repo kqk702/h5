@@ -1,0 +1,174 @@
+page {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	
+	.k-main {
+		flex: 1;
+		display: flex;
+		overflow: hidden;
+		flex-direction: column;
+		
+		.k-bar {
+			display: flex;
+			height: 110rpx;
+			padding: 0 30rpx;
+			align-items: center;
+			margin-bottom: 30rpx;
+			justify-content: space-between;
+			background-color: #EE5661;
+			
+			.k-title {
+				flex: 1;
+				min-width: 108rpx;
+			}
+			
+			.k-right {
+				gap: 34rpx;
+				display: flex;
+				
+				.k-item {
+					display: flex;
+					height: 52rpx;
+					align-items: center;
+					justify-content: center;
+					
+					.k-icon {
+						height: 44rpx;
+						&.k-log {height: 42rpx;}
+					}
+				}
+			}
+		}
+		
+		.k-user {
+			gap: 24rpx;
+			display: flex;
+			padding: 30rpx;
+			height: 170rpx;
+			margin: 0 30rpx;
+			align-items: center;
+			border-radius: 8rpx;
+			background-image: url(/static/img/mb.png);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			box-sizing: border-box;
+			
+			.k-info {
+				flex: 1;
+				gap: 4rpx;
+				display: flex;
+				flex-direction: column;
+				
+				.k-name {
+					gap: 12rpx;
+					display: flex;
+					max-width: 100%;
+					align-items: center;
+					
+					.k-icon {
+						height: 28rpx;
+						flex-shrink: 0;
+					}
+				}
+			}
+		}
+	
+		.k-card {
+			gap: 40rpx;
+			display: flex;
+			padding: 30rpx;
+			margin: 0 30rpx;
+			border-radius: 8rpx;
+			flex-direction: column;
+			background-color: #FFF;
+			margin-top: 20rpx;
+		
+			.k-fun {
+				display: flex;
+				
+				.k-item {
+					flex: 1;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					
+					.k-li {
+						gap: 4rpx;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						flex-direction: column;
+						
+						.k-thumb {
+							height: 72rpx;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							.k-icon {height: 68rpx;}
+						}
+					}
+				}
+			}
+		}
+		
+		.k-service {
+			gap: 24rpx;
+			display: flex;
+			width: 540rpx;
+			overflow: hidden;
+			padding: 0 30rpx;
+			border-radius: 8rpx;
+			align-items: center;
+			box-sizing: border-box;
+			flex-direction: column;
+			justify-content: center;
+			padding-bottom: 44rpx;
+			padding-top: 50rpx;
+			
+			.k-code {
+				width: 300rpx;
+				height: 300rpx;
+				overflow: hidden;
+				background: linear-gradient(to bottom, #FFF, rgba(255, 255, 255, 0));
+				border-radius: 8rpx;
+				
+				.k-thumb {
+					height: 252rpx;
+					padding: 16rpx;
+					overflow: hidden;
+					border-radius: 8rpx;
+					background: rgba(255, 255, 255, 0.6);
+					
+					.k-icon {
+						width: 252rpx;
+						height: 252rpx;
+						border-radius: 8rpx;
+					}
+				}
+			}
+			
+			.k-btn {
+				gap: 36rpx;
+				display: flex;
+				.k-close {color: rgba(58, 58, 58, 0.85) !important;}
+				
+				/deep/ .u-button {
+					padding: 0;
+					width: 216rpx;
+					height: 72rpx;
+					
+				}
+			}
+		}
+	}
+}
+
+/deep/ .u-text__prefix-icon {
+	margin-right: 6rpx;
+	
+	.u-icon__icon.uicon-error-circle {
+		color: rgba(58, 58, 58, 0.35) !important;
+	}
+}
